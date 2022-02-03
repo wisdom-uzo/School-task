@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.detailes_container{
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 6px 3px 40px rgb(192, 191, 191);
+}
+.details{
+    padding: 8px;
+    font-size: 0.8rem;
+    color: rgb(39, 39, 39);   
+}
+.details h2{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    
+}
+.amount{
+    background: green;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.card-type{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgb(204, 204, 204);
+}
+.card-type img{
+ width: 10rem;
+}
+.container form .inputBox{
+    margin-top: 20px;
+}
+
+
+form{
+    width: 50%;
+}
+
+.container form .inputBox span, .flexbox span{
+    display: block;
+    color:rgb(112, 111, 111);
+    padding-bottom: 5px;
+}
+
+.container form .inputBox input{
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border:1px solid rgba(0,0,0,.3);
+    color:rgb(36, 35, 35);
+}
+.container form .select_ym select{
+    padding: 7px 5px;
+    border-radius: 5px;
+    border:1px solid rgba(0,0,0,.3);
+    color:rgb(36, 35, 35);
+}
+.select_ym{
+    display: flex;
+    gap: 10px;
+   
+}
+.main-sec{
+    margin-top: 20px;
+}
+
+.container form .flexbox, .btnFlex{
+    display: flex;
+    gap:10px;
+}
+.flexbox{
+    align-items: center;
+}
+.container form .submit-btn{
+    width: 100%;
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 1rem;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+    background-color: green;
+}
+
+.container form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+form{
+    width: 100%;
+}
+
+
+.container .card-container .front{
+    color: white;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background:linear-gradient(45deg, rgb(92, 90, 92), rgb(11, 12, 10));
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding:20px;
+    transform:perspective(1000px) rotateY(0deg);
+    transition:transform .4s ease-out;
+}
+
+.container .card-container .front .image{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.container .card-container .front .image img{
+    height: 40px;
+}
+
+.container .card-container .front .card-number-box{
+    padding:30px 0;
+    font-size: 1rem;
+    color:#fff;
+}
+
+.container .card-container .front .flexbox{
+    display: flex;
+}
+
+.container .card-container .front .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.container .card-container .front .flexbox .box{
+    font-size: 15px;
+    color:#fff;
+}
+
+.container .card-container .back{
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg, rgb(14, 9, 19), rgb(47, 49, 47));
+    border-radius: 5px;
+    padding: 15px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform:perspective(1000px) rotateY(180deg);
+    transition:transform .4s ease-out;
+}
+
+.container .card-container .back .stripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.container .card-container .back .box{
+    padding: 0 20px;
+}
+
+.container .card-container .back .box span{
+    color:#fff;
+    font-size: 15px;
+}
+
+.container .card-container .back .box .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color:rgb(12, 12, 12);
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.container .card-container .back .box img{
+    margin-top: 30px;
+    height: 30px;
+}
+.expiration{
+    display: flex;
+    color: white;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

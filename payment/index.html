@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    
+</head>
+<body>
+
+<div class="container d-flex flex-column flex-lg-row justify-content-around align-items-start pt-5">
+
+    <div class="detailes_container col-lg-3 col-md-10 mb-5 mx-auto">
+        <div class="details">
+            <h2>School name </h2>
+            <p>School fees Payment</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="amount">
+            Amount Due : NGN 200,000
+        </div>
+    </div>
+
+    <div class="payment-card col-lg-8 col-md-10 mx-auto">
+
+        <div class="card-type">
+            <div class="">
+                card
+            </div>
+            <img src="/image/cards.png" alt="">
+
+        </div>
+
+       <div class="mb-5 col-12  payment-container d-flex flex-column flex-lg-row justify-content-between align-items-center ">
+
+        <div class="card-container col-lg-6 my-3 d-none d-md-block">
+            <div class="front">
+                <div class="image">
+                    <img src="image/chip.png" alt="">
+                    <img src="image/visa.png" alt="">
+                </div>
+                <div class="card-number-box">################</div>
+                <div class="flexbox">
+                    <div class="box">
+                        <span>card holder</span>
+                        <div class="card-holder-name">full name</div>
+                    </div>
+                    <div class="box">
+                        <span>expires</span>
+                        <div class="expiration" >
+                            <span style="color: white;" class="exp-month">mm/yy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back">
+                <div class="stripe"></div>
+                <div class="box">
+                    <span>cvv</span>
+                    <div class="cvv-box"></div>
+                    <img src="image/visa.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        
+        <form action="">
+            
+            <div class="inputBox ">
+                <span>card number</span>
+                <input type="text" maxlength="16" class="card-number-input">
+            </div>
+            <div class="inputBox">
+                <span>card holder</span>
+                <input type="text" class="card-holder-input">
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <div class="inputBox mr-3" >
+                    <span>Exp Date</span>
+                    <input type="text" maxlength="4" class="month-input">
+                </div>
+                
+                <div class="inputBox" >
+                    <span>cvv</span>
+                    <input type="text" maxlength="4" class="cvv-input">
+                </div>
+            </div>
+
+        
+
+            <div class="btnFlex">
+                <input type="submit" value="submit" class="submit-btn">
+                <input type="submit" value="cancle" class="submit-btn" style="background: red;">
+            </div>
+            
+        </form>
+
+
+       </div>
+    </div>
+
+</div>    
+    
+
+
+
+
+
+<script>
+
+document.querySelector('.card-number-input').oninput = () =>{
+    document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
+}
+
+document.querySelector('.card-holder-input').oninput = () =>{
+    document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
+}
+
+document.querySelector('.month-input').oninput = () =>{
+    document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
+}
+
+// document.querySelector('.year-input').oninput = () =>{
+//     document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
+// }
+
+document.querySelector('.cvv-input').onmouseenter = () =>{
+    document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
+    document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
+}
+
+document.querySelector('.cvv-input').onmouseleave = () =>{
+    document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
+    document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
+}
+
+document.querySelector('.cvv-input').oninput = () =>{
+    document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
+}
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

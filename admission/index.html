@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<div class="container-fluid">
+    <div class="row justify-content-center ">
+        <div class="col-11 col-sm-10 col-md-10 col-lg-7 col-xl-8  text-center p-0 mt-3 mb-2 ">
+            <div class="card px-0 pt-4 pb-0 mt-3 mb-3 shadow-lg">
+
+                <h2 id="heading">ADMISSION FORM</h2>
+                <p>This Information will let us know more about you</p>
+                
+                <form id="msform">
+                    <!-- progressbar -->
+                    <ul id="progressbar">
+                        <li class="active"><strong>Application</strong></li>
+                        <li ><strong>PASSPORT</strong></li>
+                        <li ><strong>Bio 1</strong></li>
+                        <li ><strong>Bio 2</strong></li>
+                        <li ><strong>confirm</strong></li>
+                    </ul>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> <br> <!-- fieldsets -->
+
+                    <fieldset class="px-3">
+                        <div class="form-card">
+                            <h4 class="text-center text-sm">2022 Entrance Admission Form</h4>
+
+                            <div class="d-flex flex-column flex-md-row">
+                                <div class="col-md-5 ">
+                                    <p class="">Email Address</p>
+                                    <input type="text">
+
+                                    <div class="">
+                                        <img src="/img/card.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                   <p>Instructions</p>
+                                   <p>2020 Entrance Admission Form</p>
+                                   <ul class="ml-5">
+                                       <li>Entre your email address to proceed</li>
+                                       <li>if you have started before, kindly enter you email address to continue</li>
+                                   </ul>
+                                   <p>Thanks</p>
+                                   <p class="my-0">Amount 200,0000</p>
+                                   <p>deadline: 23/5/3021</p>
+                                </div>
+                            </div>
+
+                        </div> 
+                        <input type="button" name="next" class="next action-button" value="Continue" />
+                    </fieldset>
+
+
+                    <fieldset class="px-5">
+                        <div class="form-card">
+                            <h4 class="text-center text-sm">UPLOAD YOUR PASSPORT</h4>
+
+                            
+                            <div class="">
+                                <label class="fieldlabels">Upload Your Photo:</label> 
+                                <input type="file" name="pic" accept="image/*"> 
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button" value="Next" /> 
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    </fieldset>
+
+
+
+                    <fieldset class="px-3">
+                        <div class="form-card">
+
+                            <h4 class="text-center text-sm">STUDENT INFORMATION</h4>
+                            
+                            <div class="d-flex flex-column flex-md-row">
+
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">First Name: *</label> 
+                                    <input type="text" name="" placeholder="First Name" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Middle Name: *</label> 
+                                    <input type="text" name="" placeholder="Middle Name" />
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex flex-column flex-md-row">
+
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Surname: *</label> 
+                                    <input type="text" name="" placeholder="Surname" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Address *</label> 
+                                    <input type="text" name="" placeholder="Address" />
+                                </div>
+                                
+                            </div>
+
+                            <div class="d-flex flex-column flex-md-row">
+
+                                <div class="col-md-6">
+                                    <label class="fieldlabels" for="inputState">Programe: *</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option value="Male">Medicine</option>
+                                        <option value="Female">Dentitry</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="fieldlabels" for="inputState">Types of Application: *</label>
+                                            <select id="inputState" class="form-control">
+                                                <option selected>Choose...</option>
+                                                <option value="Male">Freash Application</option>
+                                                <option value="Female">Re Application</option>
+                                            </select>
+                                </div>
+                                
+                            </div>
+
+                            <div class="d-flex flex-column flex-md-row">
+
+                                <div class="col-md-6 d-flex flex-column flex-md-row">
+                                    <div class="mr-4">
+                                        <label class="fieldlabels">Date of Birth: *</label> 
+                                        <input type="date" name="" placeholder="Date of Birth" />
+                                    </div>
+                                    <div >
+                                        <label class="fieldlabels">Age: *</label> 
+                                        <input type="text" name="" placeholder="Age" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex flex-column flex-md-row">
+                                    <div class="mr-4">
+                                        <label class="fieldlabels">Race: *</label> 
+                                        <input type="text" name="" placeholder="Race" />
+                                    </div>
+                                    <div class="">
+                                        <label class="fieldlabels">Nationality: *</label> 
+                                        <input type="text" name="" placeholder="Nationality" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex flex-column flex-md-row">
+
+                                <div class="col-md-6 d-flex flex-column flex-md-row">
+                                    <div class="mr-4">
+                                        <label class="fieldlabels" for="inputState">Sex: *</label>
+                                            <select id="inputState" class="form-control">
+                                                <option selected>Choose...</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Others">Others</option>
+                                            </select>
+                                    </div>
+                                    <div class="">
+                                        <label class="fieldlabels">Martal Status: *</label> 
+                                        <input type="text" name="" placeholder="Martal Status" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Place Of Birth: *</label> 
+                                    <input type="text" name="" placeholder="Place Of Birth" />
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex flex-column flex-md-row">
+
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Home Tel No: *</label> 
+                                    <input type="tel" name="" placeholder="Home Tel No" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Home Fax No: *</label> 
+                                    <input type="text" name="" placeholder="Home Fax No" />
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex flex-column flex-md-row">
+
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Mobile Phone No: *</label> 
+                                    <input type="tel" name="" placeholder="Mobile Phone No" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Office Tel No: *</label> 
+                                    <input type="tel" name="" placeholder="Office Phone No" />
+                                </div>
+                                
+                            </div>
+
+                            <div class="d-flex flex-column flex-md-row">
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Office fax No: *</label> 
+                                    <input type="text" name="" placeholder="Office fax No" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Email: *</label> 
+                                    <input type="email" name="" placeholder="Email" />
+                                </div>
+                            </div>
+                            
+                        </div> 
+
+                        <input type="button" name="next" class="next action-button" value="Next" /> 
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    </fieldset>
+
+            
+
+                    <fieldset class="px-3">
+                        <div class="form-card">
+                            
+                            <h4 class="text-center text-sm">PRARENT/GUARDIAN INFORMATION</h4>
+                            
+                            <div class="d-flex flex-column flex-md-row">
+
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">First Name: *</label> 
+                                    <input type="text" name="" placeholder="First Name" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Middle Name: *</label> 
+                                    <input type="text" name="" placeholder="Middle Name" />
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex flex-column flex-md-row">
+
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Surname: *</label> 
+                                    <input type="text" name="" placeholder="Surname" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Address *</label> 
+                                    <input type="text" name="" placeholder="Address" />
+                                </div>
+                                
+                            </div>
+
+                            
+                           
+                            <div class="d-flex flex-column flex-md-row">
+
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Home Tel No: *</label> 
+                                    <input type="tel" name="" placeholder="Home Tel No" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Home Fax No: *</label> 
+                                    <input type="text" name="" placeholder="Home Fax No" />
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex flex-column flex-md-row">
+
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Mobile Phone No: *</label> 
+                                    <input type="tel" name="" placeholder="Mobile Phone No" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Office Tel No: *</label> 
+                                    <input type="tel" name="" placeholder="Office Phone No" />
+                                </div>
+                                
+                            </div>
+
+                            <div class="d-flex flex-column flex-md-row">
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Office fax No: *</label> 
+                                    <input type="text" name="" placeholder="Office fax No" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="fieldlabels">Email: *</label> 
+                                    <input type="email" name="" placeholder="Email" />
+                                </div>
+                            </div>
+                            
+                        </div> 
+
+                        <input type="button" name="next" class="next action-button" value="Submit form" /> 
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="form-card mx-2 ">
+
+                            <h6 class="text-center text-sm">STUDENT INFORMATION</h6>
+                           <div class="d-flex flex-md-row flex-column">
+                               <div class="col-md-3 col-6">
+                                   <img src="/img/ava.jfif" alt="" style="width: 100%;">
+                                </div>
+                               <div class="">
+                                   <p class=""><strong class="ml-2">First Name</strong>: wisdom</p>
+                                   <p class=""><strong  class="ml-2">Last Name</strong>: micheal</p>
+                                   <p class=""><strong  class="ml-2">surame</strong>: uzodimna</p>
+                                   <p class=""><strong class="ml-2">Sex</strong>: Male</p>
+                                   <p class=""><strong class="ml-2">Age</strong>: 23</p>
+                                   <p class=""><strong class="ml-2">DOB</strong>: 99/99/9999</p>
+                               </div>
+                           </div>
+                           <div class="">
+                               <p class=""><strong class="ml-2">Mobile No</strong>: 07018410663</p>
+                               <p class=""><strong class="ml-2">Programe</strong>: </p>
+                               <p class=""><strong class="ml-2">Types of Application</strong>: </p>
+                               <p class=""><strong class="ml-2">Email</strong>: </p>
+                               <p class=""><strong class="ml-2">Address</strong>: </p>
+                               <p class=""><strong class="ml-2">Race</strong>: </p>
+                               <p class=""><strong class="ml-2">Nationality</strong>: </p>
+                               <p class=""><strong class="ml-2">Martal Status</strong>: </p>
+                               <p class=""><strong class="ml-2">Place Of Birth</strong>: </p>
+                               <p class=""><strong class="ml-2">Home Tel No</strong>: </p>
+                               <p class=""><strong class="ml-2">Home Fax No</strong>: </p>
+                               <p class=""><strong class="ml-2"></strong>: </p>
+                           </div>
+
+                           <h6 class="text-center text-sm">PRARENT/GUARDIAN INFORMATION</h6>
+                                <div class="">
+                                    <p class=""><strong class="ml-2">First Name</strong>: </p>
+                                    <p class=""><strong class="ml-2">Middle Name</strong>: </p>
+                                    <p class=""><strong class="ml-2">Surname</strong>: </p>
+                                    <p class=""><strong class="ml-2">Address</strong>: </p>
+                                    <p class=""><strong class="ml-2">Home Tel No</strong>: </p>
+                                    <p class=""><strong class="ml-2">Home Fax No</strong>: </p>
+                                    <p class=""><strong class="ml-2">Mobile Phone No</strong>: </p>
+                                    <p class=""><strong class="ml-2">Office Tel No</strong>: </p>
+                                    <p class=""><strong class="ml-2">Office fax No</strong>: </p>
+                                    <p class=""><strong class="ml-2">Email</strong>: </p>
+                                </div>
+                        </div>
+
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="/script.js"></script>
+<script src="/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+var current_fs, next_fs, previous_fs; //fieldsets
+var opacity;
+var current = 1;
+var steps = $("fieldset").length;
+
+setProgressBar(current);
+
+$(".next").click(function(){
+
+current_fs = $(this).parent();
+next_fs = $(this).parent().next();
+
+//Add Class Active
+$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+//show the next fieldset
+next_fs.show();
+//hide the current fieldset with style
+current_fs.animate({opacity: 0}, {
+step: function(now) {
+// for making fielset appear animation
+opacity = 1 - now;
+
+current_fs.css({
+'display': 'none',
+'position': 'relative'
+});
+next_fs.css({'opacity': opacity});
+},
+duration: 500
+});
+setProgressBar(++current);
+});
+
+$(".previous").click(function(){
+
+current_fs = $(this).parent();
+previous_fs = $(this).parent().prev();
+
+//Remove class active
+$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+//show the previous fieldset
+previous_fs.show();
+
+//hide the current fieldset with style
+current_fs.animate({opacity: 0}, {
+step: function(now) {
+// for making fielset appear animation
+opacity = 1 - now;
+
+current_fs.css({
+'display': 'none',
+'position': 'relative'
+});
+previous_fs.css({'opacity': opacity});
+},
+duration: 500
+});
+setProgressBar(--current);
+});
+
+function setProgressBar(curStep){
+var percent = parseFloat(100 / steps) * curStep;
+percent = percent.toFixed();
+$(".progress-bar")
+.css("width",percent+"%")
+}
+
+$(".submit").click(function(){
+return false;
+})
+
+});
+</script>
+
+
+</body>
+</html>
